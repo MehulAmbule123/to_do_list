@@ -1,1 +1,13 @@
-<h1> Home Controller <h1>
+<div class="task-container">
+  <h1>Tasks</h1>
+  <% @tasks.each do |task| %>
+    <div class="task-item">
+      <h2><%= task.title %></h2>
+      <div class="display:block;">
+        <h5>Description:</h5>
+      </div>
+      <p><%= task.description %></p>
+      <p>Email: <%= task.user.email %></p>
+    </div>
+  <% end %>
+</div>
