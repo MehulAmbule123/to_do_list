@@ -1,0 +1,25 @@
+
+.task-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+  }
+
+  .task-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .task-item h2 {
+    margin-bottom: 5px;
+  }
+
+  .task-item p {
+    margin: 0;
+  }
