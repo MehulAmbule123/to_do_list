@@ -12,7 +12,9 @@
         <div class="field">
           <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
         </div>
+        <%if task.done!=true %>
         <%= f.submit 'Done', class: 'btn btn-primary' %>
+        <%end%>
       <% end %>
     </div>
   <% end %>
