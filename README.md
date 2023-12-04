@@ -1,24 +1,28 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Todo List Application
 
-Things you may want to cover:
+This is a simple Todo List application built with Ruby on Rails. It allows users to manage their tasks in an organized manner.
 
-* Ruby version
+## Features
 
-* System dependencies
+- User authentication powered by Devise
+- Styling using Bootstrap
+- CRUD operations for managing tasks
 
-* Configuration
+## Prerequisites
 
-* Database creation
+Before you begin, ensure you have the following installed:
 
-* Database initialization
+- Ruby: [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+- Rails: [Install Rails](https://guides.rubyonrails.org/getting_started.html#installing-rails)
 
-* How to run the test suite
+## Installation
 
-* Services (job queues, cache servers, search engines, etc.)
+1. Clone the repository: git clone https://github.com/MehulAmbule123/to_do_list.git
+2. Navigate to the project directory: cd todo-list
+3. Install dependencies: bundle install
+4. Set up the database: rails db:create db:migrate
+5. Run the application: rails server
 
-* Deployment instructions
 
-* ...
