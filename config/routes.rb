@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get "/user/task" ,to: "task#index", as: "user_task"
   get "/task/new" ,to: "task#new"
   post "task/create" ,to: "task#create" , as: "new_task" 
-  # Defines the root path route ("/")
+  patch "task/update" ,to:"task#update" ,as: "update_task" 
+   # Defines the root path route ("/")
   # root "articles#index"
 end

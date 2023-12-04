@@ -3,10 +3,17 @@
   <% @tasks.each do |task| %>
     <div class="task-item">
       <h2><%= task.title %></h2>
-        <div class="display:block;">
+      <div class="display:block;">
         <h5>Description:</h5>
       </div>
       <p><%= task.description %></p>
+
+      <%= form_for(task, url: update_task_path(id: task.id), method: :patch) do |f| %>
+        <div class="field">
+          <%= f.hidden_field :authenticity_token, value: form_authenticity_token %>
+        </div>
+        <%= f.submit 'Done', class: 'btn btn-primary' %>
+      <% end %>
     </div>
   <% end %>
 </div>

@@ -5,8 +5,11 @@
   </button>
   <div class="collapse navbar-collapse" style="display: flex; flex-direction: row; justify-content:space-between;" id="navbarNavAltMarkup">
     <div class="navbar-nav" >
-      <a class="nav-item nav-link active" href="#">ToDo</a>
-      <a class="nav-item nav-link" href="#">Done</a>
+      <%if user_signed_in?%>
+      <%= link_to "ToDo", user_task_path(done: false), class: "btn btn-outline-success me-2" %>
+      <%= link_to "Done", user_task_path(done: true), class: "btn btn-outline-success me-2" %>
+      <%= link_to "+ Add task", task_new_path, class: "btn btn-outline-success me-2" %>
+      <%end%>
       </div>
       <div class="navbar-nav" style="margin-left: 900px;" >
       <%if !user_signed_in?%>
